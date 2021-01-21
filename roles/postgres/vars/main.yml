@@ -1,0 +1,4 @@
+---
+    db_user:  mydjangouser
+    db_password: 1223_dura!@#
+    db_name: djproject

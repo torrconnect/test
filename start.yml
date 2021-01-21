@@ -1,0 +1,9 @@
+---
+- hosts: main
+  become: true
+  roles:
+    - general
+    - nginx
+    - postgres
+      #    - django
+    - fw

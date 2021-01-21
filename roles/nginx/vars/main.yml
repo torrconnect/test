@@ -1,0 +1,4 @@
+---
+    hostname: django.domain.local
+    root: /usr/share/nginx/vhosts
+    domain: djdomain
