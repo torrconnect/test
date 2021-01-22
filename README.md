@@ -71,9 +71,9 @@ The tree .
    * [main.yml](./roles/postgres/vars/main.yml)
  * [start.yml](./start.yml)
  * [ansible.cfg](./ansible.cfg)
- * [hosts.bak](./hosts.bak)root@depl:/etc/ansible#
+ * [hosts.bak](./hosts.bak)
 
 
 Five point
 
-After reboot Nginx and DB is working fine
+After reboot Nginx and DB is working fine and Welcome Nginx "It works" is present
