@@ -25,10 +25,12 @@ Second point
 
 All of 1/2/3/5/6 of the test are working. Python vers both 3.6.9
 
-Three point
+Three point (IN PROGRESS)
+
 Django can be installed correct
 
 Four point
+
 The tree .
 
  * [ansible.cfg.bak](./ansible.cfg.bak)
