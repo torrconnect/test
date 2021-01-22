@@ -1,7 +1,9 @@
 test
+
 Paragraph one
 
 Technical Test
+
 
 1.	Setup use of 10.0.0.2/16 static IP address, Netmask 255.255.0.0, gateway 10.0.0.1/16
 2.	Install Nginx, configure it to serve as a frontend for Django APP.
@@ -12,6 +14,7 @@ Technical Test
 
 
 First point
+
 Setup two virtual servers based on VirtualBox machines with two eth's enp0s3 and enp0s8
 1 server - depl (when code is based)
 2 server - prod (when it will be deploy)
@@ -70,50 +73,6 @@ The tree .
  * [ansible.cfg](./ansible.cfg)
  * [hosts.bak](./hosts.bak)root@depl:/etc/ansible#
 
-
-
-root@depl:/etc/ansible# tree .
-├── ansible.cfg
-├── ansible.cfg.bak
-├── hosts
-│   └── hosts
-├── hosts.bak
-├── roles
-│   ├── django
-│   │   ├── files
-│   │   ├── handlers
-│   │   ├── meta
-│   │   ├── tasks
-│   │   │   └── main.yml
-│   │   ├── templates
-│   │   │   └── settings.py.j2
-│   │   └── vars
-│   │       └── main.yml
-│   ├── fw
-│   │   ├── defaults
-│   │   │   └── main.yml
-│   │   └── tasks
-│   │       └── main.yml
-│   ├── general
-│   │   └── tasks
-│   │       └── main.yml
-│   ├── nginx
-│   │   ├── handlers
-│   │   │   └── main.yml
-│   │   ├── tasks
-│   │   │   └── main.yml
-│   │   ├── templates
-│   │   │   └── default.j2
-│   │   └── vars
-│   │       └── main.yml
-│   └── postgres
-│       ├── handlers
-│       │   └── main.yml
-│       ├── tasks
-│       │   └── main.yml
-│       └── vars
-│           └── main.yml
-└── start.yml
 
 Five point
 
