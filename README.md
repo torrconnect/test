@@ -29,7 +29,7 @@ Four point
 The tree
 
 root@depl:/etc/ansible# tree .
-.
+
 ├── ansible.cfg
 ├── ansible.cfg.bak
 ├── hosts
@@ -73,4 +73,5 @@ root@depl:/etc/ansible# tree .
 └── start.yml
 
 Five point
+
 After reboot Nginx and DB is working fine
