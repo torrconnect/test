@@ -26,13 +26,57 @@ Three point
 Django can be installed correct
 
 Four point
-The tree
+The tree .
+
+ * [ansible.cfg.bak](./ansible.cfg.bak)
+ * [hosts](./hosts)
+   * [hosts](./hosts/hosts)
+ * [roles](./roles)
+   * [django](./roles/django)
+     * [files](./roles/django/files)
+     * [handlers](./roles/django/handlers)
+     * [meta](./roles/django/meta)
+     * [tasks](./roles/django/tasks)
+       * [main.yml](./roles/django/tasks/main.yml)
+     * [vars](./roles/django/vars)
+       * [main.yml](./roles/django/vars/main.yml)
+     * [templates](./roles/django/templates)
+     * [settings.py.j2](./roles/django/templates/settings.py.j2)
+   * [fw](./roles/fw)
+     * [defaults](./roles/fw/defaults)
+       * [main.yml](./roles/fw/defaults/main.yml)
+     * [tasks](./roles/fw/tasks)
+     * [main.yml](./roles/fw/tasks/main.yml)
+   * [general](./roles/general)
+     * [tasks](./roles/general/tasks)
+     * [main.yml](./roles/general/tasks/main.yml)
+   * [nginx](./roles/nginx)
+     * [handlers](./roles/nginx/handlers)
+       * [main.yml](./roles/nginx/handlers/main.yml)
+     * [tasks](./roles/nginx/tasks)
+       * [main.yml](./roles/nginx/tasks/main.yml)
+     * [templates](./roles/nginx/templates)
+       * [default.j2](./roles/nginx/templates/default.j2)
+     * [vars](./roles/nginx/vars)
+     * [main.yml](./roles/nginx/vars/main.yml)
+   * [postgres](./roles/postgres)
+   * [tasks](./roles/postgres/tasks)
+     * [main.yml](./roles/postgres/tasks/main.yml)
+   * [handlers](./roles/postgres/handlers)
+     * [main.yml](./roles/postgres/handlers/main.yml)
+   * [vars](./roles/postgres/vars)
+   * [main.yml](./roles/postgres/vars/main.yml)
+ * [start.yml](./start.yml)
+ * [ansible.cfg](./ansible.cfg)
+ * [hosts.bak](./hosts.bak)root@depl:/etc/ansible#
+
+
 
 root@depl:/etc/ansible# tree .
-── ansible.cfg
-── ansible.cfg.bak
-── hosts
-   └── hosts
+├── ansible.cfg
+├── ansible.cfg.bak
+├── hosts
+│   └── hosts
 ├── hosts.bak
 ├── roles
 │   ├── django
@@ -70,47 +114,7 @@ root@depl:/etc/ansible# tree .
 │       └── vars
 │           └── main.yml
 └── start.yml
-├── ansible.cfg
-├── ansible.cfg.bak
-├── hosts/
-│   └── hosts
-├── hosts.bak
-├── roles/
-│   ├── django/
-│   │   ├── files/
-│   │   ├── handlers/
-│   │   ├── meta/
-│   │   ├── tasks/
-│   │   │   └── main.yml
-│   │   ├── templates/
-│   │   │   └── settings.py.j2
-│   │   └── vars/
-│   │       └── main.yml
-│   ├── fw/
-│   │   ├── defaults/
-│   │   │   └── main.yml
-│   │   └── tasks/
-│   │       └── main.yml
-│   ├── general/
-│   │   └── tasks/
-│   │       └── main.yml
-│   ├── nginx/
-│   │   ├── handlers/
-│   │   │   └── main.yml
-│   │   ├── tasks/
-│   │   │   └── main.yml
-│   │   ├── templates/
-│   │   │   └── default.j2
-│   │   └── vars/
-│   │       └── main.yml
-│   └── postgres/
-│       ├── handlers/
-│       │   └── main.yml
-│       ├── tasks/
-│       │   └── main.yml
-│       └── vars/
-│           └── main.yml
-└── start.yml
+
 Five point
 
 After reboot Nginx and DB is working fine
