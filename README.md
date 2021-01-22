@@ -29,11 +29,10 @@ Four point
 The tree
 
 root@depl:/etc/ansible# tree .
-
-├── ansible.cfg
-├── ansible.cfg.bak
-├── hosts
-│   └── hosts
+── ansible.cfg
+── ansible.cfg.bak
+── hosts
+   └── hosts
 ├── hosts.bak
 ├── roles
 │   ├── django
@@ -71,7 +70,47 @@ root@depl:/etc/ansible# tree .
 │       └── vars
 │           └── main.yml
 └── start.yml
-
+├── ansible.cfg
+├── ansible.cfg.bak
+├── hosts/
+│   └── hosts
+├── hosts.bak
+├── roles/
+│   ├── django/
+│   │   ├── files/
+│   │   ├── handlers/
+│   │   ├── meta/
+│   │   ├── tasks/
+│   │   │   └── main.yml
+│   │   ├── templates/
+│   │   │   └── settings.py.j2
+│   │   └── vars/
+│   │       └── main.yml
+│   ├── fw/
+│   │   ├── defaults/
+│   │   │   └── main.yml
+│   │   └── tasks/
+│   │       └── main.yml
+│   ├── general/
+│   │   └── tasks/
+│   │       └── main.yml
+│   ├── nginx/
+│   │   ├── handlers/
+│   │   │   └── main.yml
+│   │   ├── tasks/
+│   │   │   └── main.yml
+│   │   ├── templates/
+│   │   │   └── default.j2
+│   │   └── vars/
+│   │       └── main.yml
+│   └── postgres/
+│       ├── handlers/
+│       │   └── main.yml
+│       ├── tasks/
+│       │   └── main.yml
+│       └── vars/
+│           └── main.yml
+└── start.yml
 Five point
 
 After reboot Nginx and DB is working fine
