@@ -76,4 +76,4 @@ The tree .
 
 Five point
 
-After reboot Nginx and DB is working fine and Welcome Nginx "It works" is present
+After reboot Nginx and DB is working fine "from the box" and Welcome Nginx "It works" is present
