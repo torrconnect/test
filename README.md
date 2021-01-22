@@ -15,8 +15,10 @@ Technical Test
 
 Point First
 
-Setup two virtual servers based on VirtualBox machines with two eth's enp0s3 and enp0s8
+Setup two virtual servers based on VirtualBox machines with two eth's enp0s3 Жцйand enp0s8
+
 1.1 server - depl (when code is based)
+
 1.2 server - prod (when code will to be deploy)
 
 Both server have Ubuntu 18.04 and configurated to access without log/pass (with .ssh/ configs)
