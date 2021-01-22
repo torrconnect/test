@@ -13,25 +13,25 @@ Technical Test
 6.	Make sure all your changes are persistent after reboot.
 
 
-First point
+Point First
 
 Setup two virtual servers based on VirtualBox machines with two eth's enp0s3 and enp0s8
-1 server - depl (when code is based)
-2 server - prod (when it will be deploy)
+1.1 server - depl (when code is based)
+1.2 server - prod (when code will to be deploy)
 
 Both server have Ubuntu 18.04 and configurated to access without log/pass (with .ssh/ configs)
 
-Second point
+Point Second
 
 All of 1/2/3/5/6 of the test are working. Python vers both 3.6.9
 
-Three point (IN PROGRESS)
+Point Three (IN PROGRESS)
 
 Django can be installed correct
 
-Four point
+Point Four
 
-The tree .
+"The tree of code"  
 
  * [ansible.cfg.bak](./ansible.cfg.bak)
  * [hosts](./hosts)
@@ -76,6 +76,10 @@ The tree .
  * [hosts.bak](./hosts.bak)
 
 
-Five point
+Point Five
+
+FW rules based on UFW for ports 22/80
+
+Point Six
 
 After reboot Nginx and DB is working fine "from the box" and Welcome Nginx "It works" is present
