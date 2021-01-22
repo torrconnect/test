@@ -1,3 +1,3 @@
 ---
 ufw_allowed_hosts: []
-ufw_open_ports: [80]
+ufw_open_ports: [22, 80]
