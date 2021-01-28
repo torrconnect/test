@@ -2,8 +2,8 @@
 - hosts: main
   become: true
   roles:
-#    - general
+    - general
     - nginx
-#    - postgres
-#    - fw
+    - postgres
+    - fw
     - django
