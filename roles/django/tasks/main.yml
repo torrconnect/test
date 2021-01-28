@@ -40,4 +40,4 @@
         executable: /bin/bash
  
    - name: Start server
-     shell: "nohup {{project_name_path}}/env/bin/python3 {{ project_name_path }}/{{ project_name }}/manage.py runserver 0.0.0.0:8000 &"
+     shell: "nohup {{project_name_path}}/env/bin/python3 {{ project_name_path }}/{{ project_name }}/manage.py runserver localhost:8000 &"
