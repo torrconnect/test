@@ -11,6 +11,4 @@
           - python3-tk
           - git
           - virtualenv
-            #        vars: 
-            #          - ansible_python_interpreter: /usr/bin/python3
         state: latest

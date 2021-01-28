@@ -1,0 +1,6 @@
+---
+     - name: django start
+       service: name=django state=started
+
+     - name: django restart
+       service: name=django state=restarted

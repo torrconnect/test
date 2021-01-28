@@ -5,7 +5,7 @@
       notify:
          - nginx start
 
-    - name: Add Nginx cofig
+    - name: Add Nginx config
       when: nginxinstalled is success
       template: src=default.j2 dest=/etc/nginx/sites-available/default owner=www-data group=www-data
 

@@ -1,5 +1,5 @@
 ---
-   - name: Create directory
+   - name: Creates directory
      file: path={{project_name_path}} state=directory
 
    - name: Install Django Framework
@@ -9,15 +9,23 @@
         virtualenv_command: virtualenv
         virtualenv_python: python3
 
-   - name: Install python library for PSQL
+   - name: Instal python library for PSQL
      pip:
         name: psycopg2
         virtualenv: "{{project_name_path}}/env"
         virtualenv_command: virtualenv
         virtualenv_python: python3
 
+        #   - name: Instal gunicorn
+        #     pip:
+        #        name: gunicorn3
+        #        virtualenv: "{{project_name_path}}/env"
+        #        virtualenv_command: virtualenv
+        #        virtualenv_python: python3
+
    - name: Install a django project
      command: "{{ project_name_path }}/env/bin/django-admin.py startproject {{ project_name }} chdir={{ project_name_path }}/"
+
    - name: Create Settings File for Django
      template: src=settings.py.j2 dest={{ project_name_path }}/{{ project_name }}/{{ project_name }}/settings.py
 
@@ -33,11 +41,3 @@
      django_manage: app_path={{ project_name_path }}/{{ project_name }}
                         command=collectstatic
                         virtualenv={{project_name_path}}/env
-
-   - name: Activate server
-     shell: "source {{project_name_path}}/env/bin/activate {{ project_name_path }}/"
-     args:
-        executable: /bin/bash
- 
-   - name: Start server
-     shell: "nohup {{project_name_path}}/env/bin/python3 {{ project_name_path }}/{{ project_name }}/manage.py runserver 0.0.0.0:8000 &"
