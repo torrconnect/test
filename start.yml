@@ -5,5 +5,5 @@
     - general
     - nginx
     - postgres
-      #    - fw
+    - fw
     - django
